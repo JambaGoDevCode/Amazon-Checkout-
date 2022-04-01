@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+/* Form > Container */
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+/* Form > Container > Detalhes */
+.container .detalhes{
+
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+    .address .form-group{
+        display: flex;
+        margin: 1em;
+    } 
+
+    .address .form-group label{
+        flex: 1;
+        text-align: right;
+        margin-right: 1em;
+    }
+    .address .form-group input{
+        flex: 3;
+        font-size: 1em;
+        height: 30px;
+        border-radius: 3px;
+        padding-left: 10px;
+    }
+
+
+
+    .detalhes .shipping{
+        text-align: center;
+    }
+    .detalhes .shipping select{
+        font-size: 1em;
+        margin-top: 0.5em;
+    }
+
+
+
+    .detalhes .payment{
+        text-align: center;
+        margin-top: 1em;
+    }
+    .detalhes .payment div:nth-child(2){
+        display: flex;
+        margin-top: 1em;
+    }
+    .detalhes .payment div:nth-child(2) label{
+        flex: 1;
+    }
+
+
+
+
+    .detalhes .checks{
+        display: flex;
+        margin-top: 1em;
+    }
+
+    .detalhes .checks label{
+        flex: 1;
+    }
+    .detalhes .checks label:nth-child(1){
+        order: 2;
+    }
+
+
+
+
+
+
+
+
+/* Form > Container > coments */
+.container .coments{
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+    .coments textarea{
+        flex: 1;
+    }
+
+
+
+
+
+
+
+
+/* Form > Submit */
+.submit{
+    margin-top: auto;
+    text-align: center;
+}
+
+    .submit input{
+        background-color: cornflowerblue;
+        color: #fff;
+        width: 80%;
+        font-size: 1.5em;
+        border: none;
+        border-radius: 3px;
+    }
